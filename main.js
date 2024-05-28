@@ -15,7 +15,7 @@ const iniciarOuPausarBt = document.querySelector('#start-pause span');
 const imgPauseOuIniciar = document.querySelector('.app__card-primary-butto-icon');
 const tempoNaTela = document.querySelector('#timer');
 
-let tempoDecorridoEmSegundos = 5;
+let tempoDecorridoEmSegundos = 1500;
 let intervaloId = null;
 
 musica.loop = true;
@@ -29,7 +29,7 @@ musicaInput.addEventListener('change', () =>{
 
 
 focoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 5;
+    tempoDecorridoEmSegundos = 1500;
     alterarContexto('foco');
     focoBt.classList.add('active');
 })
